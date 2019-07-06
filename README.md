@@ -26,10 +26,9 @@
 
 ## Dependencies
 
-This tool should be compatible with Mac and Linux. It won't work in a virtual machine.
-
 * libusb, `If you are using Linux: install libusb using your package manager.`
-* [iPhone 3GS iOS 4.3.5 iBSS](#ibss)
+* A computer that runs macOS or Linux. This won't work on Windows or a VM with macOS or Linux.
+* An old iDevice that is supported by this program. (e.g. New bootrom iPhone 3GS)
 
 
 ## Tutorial
@@ -44,24 +43,10 @@ Write-up for alloc8 exploit can be found here:
 https://github.com/axi0mX/alloc8
 
 
-## iBSS
 
-Download iPhone 3GS iOS 4.3.5 IPSW from Apple:
-
-http://appldnld.apple.com/iPhone4/041-1965.20110721.gxUB5/iPhone2,1_4.3.5_8L1_Restore.ipsw
-
-In Terminal, extract iBSS using the following command, then move the file to ipwndfu folder:
-
-```
-unzip -p iPhone2,1_4.3.5_8L1_Restore.ipsw Firmware/dfu/iBSS.n88ap.RELEASE.dfu > n88ap-iBSS-4.3.5.img3
-```
-
-
-## Coming soon!
+## Coming soon! (on axi0mX's repo mainly)
 
 * Reorganize and refactor code.
-
-* Easier setup: download iBSS automatically using partial zip.
 
 * Dump SecureROM on S5L8720 devices.
 
